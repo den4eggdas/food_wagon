@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Wagon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__close">X</div>
+         <img src="icons/logo burger.svg" alt="logo burger"><div class="header__info__logo"><span>food</span>wagon</div>
+        <div class="popupItem"> <h3>Login: </h3> <input type="text" class="loginGeneration" min="4" required></div>
+        <div class="popupItem"> <h3>Password: </h3> <input type="password" class="passGeneration" min="8" required></div>
+        <button class="btn autorizationBtn" id="autorizat">Entrance</button>
+        <button class="btn registationBtn">Registration</button>
+        </div>
+
+    </div>
+    <div class="loginsucceses">
+        <div class="loginsucceses__wrapper">
+            <div class="loginsucceses__close">X</div>
+         <img src="images/ava.png" alt="loginAva"><div class="header__info__logo"><span class="login__name" >foodwagon</span></div>
+       <button class="btn autorizationBtn" id="history">Order history</button>
+    <h4>Account level: <span>1</span> <button class="askLevel">(?)</button></h4> 
+    <p class="askLevelInfo">Your account level reflects how actively you use our food delivery service. 
+        The more orders you place and the more you participate in promotions, the higher your level! With each new level, 
+        you receive even more delightful bonuses: exclusive discounts, gifts, priority delivery, and access to special offers.
+         Increase your level to enjoy all the benefits and make your orders even more rewarding and convenient!</p>
+        </div>
+
+    </div>
+    <div class="container">
+    <header class="header">
+        <div class="header__info">
+            <div class="header__info__item">
+       <img src="icons/logo burger.svg" alt="logo burger"><div class="header__info__logo"><span>food</span>wagon</div>
+       </div>
+
+       <div class="header__info__item2"> <b>Deliver to:</b> <img src="icons/map-marker-alt.svg" alt="marker map"> Current Location 
+        <span class="countryFact">Mohammadpur</span>  
+        <span class="cityFact">Bus</span> 
+        <span class="streetFact">Stand</span>
+        <span class="houseFact">,</span> 
+        <span class="flatFact">Dhaka</span>
+</div>
+
+ <div class="header__info__item3">
+       <img src="icons/Search.svg" alt="Search"><input type="search" placeholder= "Search Food" > 
+
+       <button class="header__info__btn"><img src="icons/user.svg" alt="login"><span class="loginGenerationInfo">Login</span></button>
+       </div>
+       </div>
+</header>
+   <main>
+        <section class="header__section">
+<h1>Are you starving?</h1>
+<p>Within a few clicks, find meals that are accessible near you</p>
+
+
+<div class="header__form">
+    <div class="header__form__btn">
+    <button class="btn form active"><img src="icons/bike.svg" alt="Delivery"><span>Delivery</span></button>
+    <button class="btn form"><img src="icons/packed.svg" alt="Pickup"><span>Pickup</span></button>
+    </div>
+
+    <div class="header__form__search">
+<div class="header__formsearch__info">
+    <img src="icons/map-marker-alt red.svg" alt="map">
+    <input type="text" placeholder="Enter Your Address" class="search__location" >
+    <!-- Ниже форма для открытия адреса ---- ДОПИСАТЬ КОД С ГОРОДАМИ-->
+    <div class="header__delivery">
+    <div class="header__delivery__items">
+       <div class="header__delivery__item"> <h5>Country: </h5> 
+         <select class="countryInfo" id="countrySelect">
+        <option value="">Select a country</option>
+        <option value="Russia">Russia</option>
+        <option value="USA">USA</option>
+        <option value="Germany">Germany</option>
+        <option value="France">France</option>
+    
+    </select> </div>
+       <div class="header__delivery__item"> <h5>City: </h5> 
+          <select class="cityInfo" id="citySelect" disabled>
+<option value=""></option>
+          </select></div> 
+       <div class="header__delivery__item"> <h5>Street: </h5> <input type="text" placeholder="Veteranov" class="streetInfo"></div>
+       <div class="header__delivery__item"> <h5>House: </h5> <input type="number" placeholder="175" class="houseInfo"></div>
+       <div class="header__delivery__item"> <h5>Flat: </h5> <input type="number" placeholder="61" class="flatInfo"> </div>
+           
+    </div>
+
+    </div>
+        
+    </div>
+    <button class="btn formsearch" id="findfood"><img src="icons/Search — white.svg" alt="search">Find Food</button>
+     
+    
+    
+</div>
+<img class="langman" src="images/langman.png" alt="langman">
+        </section>
+    
+ 
+        <div class="wrapper__head">
+            <div class="wrapper__head__item">
+
+              <div class="img"><img src="images/Image (1).png" alt="">   <div class="sale"> <span class="countdiscount">15</span> <div class="percentoff"> %<span> off</span></div></div> </div>
+            <h4>Greys Vage</h4>
+        <p>6 Days Remaining</p>
+    </div>
+            <div class="wrapper__head__item">
+                <div class="img"><img src="images/Image (2).png" alt=""> <div class="sale"> <span class="countdiscount">10</span> <div class="percentoff"> %<span> off</span></div></div> </div>
+              <h4>Greys Vage</h4>
+        <p>6 Days Remaining</p>
+    </div>
+            <div class="wrapper__head__item">
+                 <div class="img"><img src="images/Image (3).png" alt=""> <div class="sale"> <span class="countdiscount">20</span> <div class="percentoff"> %<span> off</span></div></div> </div>
+              <h4>Greys Vage</h4>
+        <p>8 Days Remaining</p></div>
+            <div class="wrapper__head__item">
+                 <div class="img"><img src="images/Image (4).png" alt=""> <div class="sale"> <span class="countdiscount">25</span> <div class="percentoff"> %<span> off</span></div></div> </div>
+              <h4>Greys Vage</h4>
+        <p>7 Days Remaining</p></div>
+        </div>
+
+        <div class="wrapper__main">
+            <h3>How does it work</h3>
+            <div class="wrapper__main__items">
+            <div class="wrapper__main__item"><img   src="icons/Map Marker.svg" alt="map-marker">
+                <h4>Select location</h4>
+            <p>Choose the location where your food will be delivered.</p>
+        </div>
+            <div class="wrapper__main__item"><img src="icons/order.svg" alt="order">
+            <h4>Choose order</h4>
+            <p>Check over hundreds of menus to pick your favorite food</p></div>
+            <div class="wrapper__main__item"><img src="icons/pay.svg" alt="pay">
+            <h4>Pay advanced</h4>
+            <p>It's quick, safe, and simple. Select several methods of payment</p></div>
+            <div class="wrapper__main__item"><img src="icons/meals.svg" alt="meal">
+            <h4>Enjoy meals</h4>
+            <p>Food is made and delivered directly to your home.</p></div>
+        </div>
+        </div>
+
+        <div class="wrapper__section">
+            <h3>Popular items</h3>
+        <div class="wrapper__section__items">
+            <div class="wrapper__section__item"><img class="popularImg" src="images/popularItems.png" alt="">
+                <h4>Cheese Burger</h4>
+                <p><img  src="icons/map-marker-alt.svg" alt=""><span>Burger Arena</span></p>
+                <p>$3.88</p>
+                <button class="wrapper__section__btn">Order Now</button>
+            </div>
+            <div class="wrapper__section__item"><img class="popularImg" src="images/popularItems2.png" alt="">
+             <h4>Toffe’s Cake</h4>
+                <p><img src="icons/map-marker-alt.svg" alt=""><span>Top Sticks</span></p>
+                <p>$4.00</p>
+                <button class="wrapper__section__btn">Order Now</button>
+            </div>
+            <div class="wrapper__section__item"><img class="popularImg" src="images/popularItems3.png" alt="">
+             <h4>Dancake</h4>
+                <p><img src="icons/map-marker-alt.svg" alt=""><span>Cake World</span></p>
+                <p>$1.99</p>
+                <button class="wrapper__section__btn">Order Now</button>
+            </div>
+            <div class="wrapper__section__item"><img class="popularImg" src="images/popularItems4.png" alt="">
+             <h4>Crispy Sandwitch</h4>
+                <p><img src="icons/map-marker-alt.svg" alt=""><span>Fastfood Dine</span></p>
+                <p>$3.00</p>
+                <button class="wrapper__section__btn">Order Now</button>
+            </div>
+            <div class="wrapper__section__item"><img class="popularImg" src="images/popularItems5.png" alt=""> <h4>Thai  Soup</h4>
+                <p><img src="icons/map-marker-alt.svg" alt=""><span>Foody man</span></p>
+                <p>$2.79</p>
+                <button class="wrapper__section__btn">Order Now</button>
+            </div>
+            </div>
+        </div>
+        <div class="wrapper__element">
+            <h3>Featured Restaurants</h3>
+            <div class="wrapper__element__items1">
+
+                <!-- ///    Отсюда начало   //// -->
+            <div class="wrapper__element__item">
+                <img class="featuring__logo" src="images/Featuring.png" alt="">
+                <div class="featuring__logo__item1"> 
+                    <img src="icons/Icon discount.svg" alt="discount">
+                    <h6>20% off</h6>
+                </div>
+                <div class="featuring__logo__item2"> 
+                    <img src="icons/Icon speed.svg" alt="speed">
+                    <h6>Fast</h6>
+                    </div>
+
+
+
+                <!-- // меняю отсюда -->
+               <div class="wrapper__element__info"> 
+                <img class="restaurant-logo" src="images/Restaruant Logo.png" alt="">
+           <h4 class="wrapper__element__heading">Foodworld</h4>  
+           <div class="wrapper__element__info2">
+            <img src="icons/Star.svg" alt=""> 
+                <h5>46</h5> 
+                </div>
+            </div>
+            <p class="tomorrow">Opens tomorrow</p> 
+        </div>
+
+        <!-- // Тут конец //// -->
+          
+            <div class="wrapper__element__item">
+                <img class="featuring__logo" src="images/Featuring (2).png" alt="">
+                    <div class="featuring__logo__item1"> 
+                    <img src="icons/Icon discount.svg" alt="discount">
+                    <h6>20% off</h6>
+                </div>
+                   <div class="featuring__logo__item2"> 
+                    <img src="icons/Icon speed.svg" alt="speed">
+                    <h6>Fast</h6>
+                    </div>
+ <!-- // меняю отсюда -->
+                <div class="wrapper__element__info"> 
+            <img class="restaurant-logo" src="images/Restaruant Logo (1).png" alt="">
+            <h4 class="wrapper__element__heading">Pizzahub</h4>
+            <div class="wrapper__element__info2">
+             <img src="icons/Star.svg" alt=""> 
+             <h5>40</h5>
+             </div>
+             </div>
+            <p class="tomorrow">Opens tomorrow</p>
+        </div>
+    <!-- // Тут конец //// -->
+
+            <div class="wrapper__element__item">
+                <img class="featuring__logo" src="images/Featuring (3).png" alt="">
+                    <div class="featuring__logo__item1"> 
+                    <img src="icons/Icon discount.svg" alt="discount">
+                    <h6>20% off</h6>
+                </div>
+                     <div class="featuring__logo__item2"> 
+                    <img src="icons/Icon speed.svg" alt="speed">
+                    <h6>Fast</h6>
+                    </div>
+                   <div class="wrapper__element__info">
+                   
+                <img class="restaurant-logo"  src="images/Restaruant Logo (2).png" alt="">
+               
+                <h4 class="wrapper__element__heading">Donuts hut</h4> 
+                  <!-- // меняю отсюда  АУУУУ-->
+                    <div class="wrapper__element__info2">
+                <img src="icons/Star.svg" alt=""> 
+                <h5>20</h5>
+                </div>
+                </div>
+                <p class="now">Open Now</p>
+                    <!-- // Тут конец //// -->
+            </div>
+           
+            <div class="wrapper__element__item">
+                <img class="featuring__logo" src="images/Featuring (4).png" alt="">
+                    <div class="featuring__logo__item1"> 
+                    <img src="icons/Icon discount.svg" alt="discount">
+                    <h6>20% off</h6>
+                </div>
+                   <div class="featuring__logo__item2"> 
+                    <img src="icons/Icon speed.svg" alt="speed">
+                    <h6>Fast</h6>
+                    </div>
+                  <!-- // меняю отсюда -->
+                   <div class="wrapper__element__info">
+                <img class="restaurant-logo" src="images/Restaruant Logo (3).png" alt="">
+                <h4 class="wrapper__element__heading">Sub Way</h4> 
+                 <div class="wrapper__element__info2">
+                <img src="icons/Star.svg" alt=""> 
+                <h5>50</h5>
+                </div>
+                </div>
+                 <p class="now">Open Now</p>
+                     <!-- // Тут конец //// -->
+            </div>
+             </div>
+            <div class="wrapper__element__items2">
+            <div class="wrapper__element__item">
+                <img class="featuring__logo" src="images/Featuring (5).png" alt="">
+                    <div class="featuring__logo__item1"> 
+                    <img src="icons/Icon discount.svg" alt="discount">
+                    <h6>20% off</h6>
+                </div>
+                   <div class="featuring__logo__item2"> 
+                    <img src="icons/Icon speed.svg" alt="speed">
+                    <h6>Fast</h6>
+                    </div>
+
+                  <!-- // меняю отсюда -->
+                   <div class="wrapper__element__info">
+            <img class="restaurant-logo" src="images/Restaruant Logo (4).png" alt="">
+            <h4 class="wrapper__element__heading">Ruby Tuesday</h4> 
+             <div class="wrapper__element__info2">
+            <img src="icons/Star.svg" alt=""> 
+            <h5>26</h5>
+            </div>
+            </div>
+             <p class="now">Open Now</p>
+                 <!-- // Тут конец //// -->
+            </div>
+            <div class="wrapper__element__item">
+                <img class="featuring__logo" src="images/Featuring (6).png" alt="">
+                    <div class="featuring__logo__item1"> 
+                    <img src="icons/Icon discount.svg" alt="discount">
+                    <h6>20% off</h6>
+                </div>
+                   <div class="featuring__logo__item2"> 
+                    <img src="icons/Icon speed.svg" alt="speed">
+                    <h6>Fast</h6>
+                    </div>
+
+                  <!-- // меняю отсюда -->
+                   <div class="wrapper__element__info">
+              <img class="restaurant-logo" src="images/Restaurant.png" alt="">
+            <h4 class="wrapper__element__heading">Kuakata Fried Chicken</h4> 
+             <div class="wrapper__element__info2">
+            <img src="icons/Star.svg" alt="">
+             <h5>53</h5>
+             </div>
+             </div>
+             <p class="now">Open Now</p>
+                 <!-- // Тут конец //// -->
+        </div>
+            <div class="wrapper__element__item">
+                <img class="featuring__logo" src="images/Featuring (7).png" alt="">
+                    <div class="featuring__logo__item1"> 
+                    <img src="icons/Icon discount.svg" alt="discount">
+                    <h6>20% off</h6>
+                </div>
+                   <div class="featuring__logo__item2"> 
+                    <img src="icons/Icon speed.svg" alt="speed">
+                    <h6>Fast</h6>
+                    </div>
+
+                  <!-- // меняю отсюда -->
+                   <div class="wrapper__element__info">
+                <img class="restaurant-logo" src="images/Restaurant (2).png" alt="">
+                <h4 class="wrapper__element__heading">Red Square</h4>
+                 <div class="wrapper__element__info2">
+                 <img src="icons/Star.svg" alt="">
+                 <h5>45</h5>
+                 </div>
+                 </div>
+                 <p class="now">Open Now</p>
+                     <!-- // Тут конец //// -->
+            </div>
+            <div class="wrapper__element__item">
+                <img class="featuring__logo" src="images/Featuring (8).png" alt="">
+                    <div class="featuring__logo__item1"> 
+                    <img src="icons/Icon discount.svg" alt="discount">
+                    <h6>20% off</h6>
+                </div>
+                   <div class="featuring__logo__item2"> 
+                    <img src="icons/Icon speed.svg" alt="speed">
+                    <h6>Fast</h6>
+                    </div>
+
+                  <!-- // меняю отсюда -->
+                   <div class="wrapper__element__info">
+                <img class="restaurant-logo" src="images/Restaruant Logo (5).png" alt="">
+                <h4 class="wrapper__element__heading">Taco Bell</h4>
+                 <div class="wrapper__element__info2">
+                 <img src="icons/Star.svg" alt=""> 
+                <h5>35</h5>
+                </div>
+                </div>
+                 <p class="now">Open Now</p>
+                     <!-- // Тут конец //// -->
+            </div>
+            </div>
+            <div class="wrapper__element__footer">
+            <button class="btn wrapperBtn">View All ></button>
+            </div>
+        
+        </div>
+        <div class="list">  
+            <div class="list__header">
+            <h3>Search by Food</h3>
+            <h4>View All ></h4>
+            </div>
+            <div class="list__main">
+            <div class="list__item"><img src="images/search.png" alt=""><h4>Pizza</h4></div>
+            <div class="list__item"><img src="images/search2.png" alt=""><h4>Burger</h4></div>
+            <div class="list__item"><img src="images/search3.png" alt=""><h4>Noodles</h4></div>
+            <div class="list__item"><img src="images/search4.png" alt=""><h4>Sub-sandiwch</h4></div>
+            <div class="list__item"><img src="images/search5.png" alt=""><h4>Chowmein</h4></div>
+            <div class="list__item"><img src="images/search6.png" alt=""><h4>Steak</h4></div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel__card">
+                <div class="panel__card__el">
+                <div class="panel__card__elem"><img src="icons/droch.svg" alt=""> 
+                  <div class="panel__card__elemH4">
+                    <h4>Daily</h4>
+                    <h4>Discounts</h4>
+                </div>   
+                </div>
+                <div class="panel__card__elem"><img src="icons/droch (2).svg" alt="">
+                    <div class="panel__card__elemH4">
+                <h4>Live</h4>
+                    <h4>Tracing</h4> 
+                </div>
+            </div>
+                <div class="panel__card__elem"><img src="icons/droch (3).svg" alt="">
+                    <div class="panel__card__elemH4">
+                    <h4>Quick</h4>
+                    <h4>Delivery</h4> 
+                    </div>
+                    </div>
+            </div>
+            </div>
+            <div class="panel__layout">
+                <img class="iphone1" src="images/iPhone.png" alt="">
+                <img class="iphone2" src="images/Shadow.png" alt="">
+                <div class="panel__layout__elem">
+                <h3>Install the app</h3>
+                <p>It's never been easier to order food. Look for the <br>  finest discounts and you'll be lost in a world of <br>delectable food.</p>
+                <div class="panel__layout__items">
+                    <div class="panel__layout__item">
+                        <img src="icons/Google Play logo.svg" alt="">
+                        <div class="panel__layout__elements">
+                        <h6>GET IN ON</h6>
+                        <h4>Google Play</h4>
+                        </div>
+                    </div>
+                    <div class="panel__layout__item">
+                        <img src="icons/Apple logo (1).svg" alt="">
+                        <div class="panel__layout__elements">
+                        <h6>Download on the</h6>
+                        <h4>App Store</h4>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+   
+        </div>
+
+        <div class="section">
+            <div class="section__element">
+                <div class="section__element__it">
+                <div class="section__element__item">
+                    <h4>Best deals <span>Crispy Sandwiches</span></h4>
+                    <p>Enjoy the large size of sandwiches. Complete 
+perfect slice of sandwiches.</p>
+<button class="btn section__btn">Proceed to order ></button> 
+</div>
+
+<img src="images/preLastFood.png" alt="" srcset="">
+                </div>
+                <div class="section__element__it">
+                
+                    <img class="newimg" src="images/preLastFood2.png" alt="">
+                    <div class="section__element__item">
+                    <h4>Celebrate  parties with <span>Fried Chicken</span></h4>
+                    <p>Get the best fried chicken smeared with a lip smacking lemon chili flavor. Check out 
+best deals for fried chicken.</p>
+<button class="btn section__btn">Proceed to order ></button> 
+                </div>
+                </div>
+                <div class="section__element__it">
+                <div class="section__element__item">
+                     <h4>Wanna eat hot 
+& spicy <span>Pizza?</span></h4>
+                    <p>Pair up with a friend and enjoy the 
+hot and crispy pizza pops. Try it 
+with the best deals.</p>
+<button class="btn section__btn">Proceed to order ></button> 
+</div>
+<img src="images/preLastFood3.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <h3>Are you ready to order with <br>the best deals?</h3>
+            <button class="btn block__btn">PROCEED TO ORDER ></button>
+        </div>
+        
+    </main>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
